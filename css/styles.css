@@ -115,7 +115,7 @@ body {
   bottom: -1px;
 }
 
-.page-header {
+.header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -231,7 +231,7 @@ body {
   padding-bottom: 94px;
 }
 
-.section-title {
+.section__title {
   color: var(--title-text-color);
   margin-bottom: 50px;
 
@@ -240,7 +240,7 @@ body {
   text-align: center;
 }
 
-.section.team {
+.team-section {
   background-color: var(--secondery-bg-color);
 }
 
@@ -508,7 +508,7 @@ body {
   color: var(--white-text-color);
 }
 
-.footer__nav .address {
+.address {
   color: var(--white-text-color);
   text-decoration: none;
 }
