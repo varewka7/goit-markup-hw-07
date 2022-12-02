@@ -4,6 +4,11 @@
     padding-bottom: 60px;
 }
 
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
 .logo__footer {
     margin-bottom: 20px;
 }
@@ -12,14 +17,10 @@
     color: var(--white-text-color);
 }
 
-.footer__nav-item:not(:last-child) {
-    margin-bottom: 9px;
+.footer-list {
+    margin-left: 93px;
 }
 
-.footer__nav-link:hover,
-.footer__nav-link:focus {
-    color: var(--accent-color);
-}
 
 .address {
     color: var(--white-text-color);
@@ -32,6 +33,15 @@
     font-size: 14px;
     line-height: 1.71;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
+}
+
+.footer__nav-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .footer-address {
@@ -51,31 +61,6 @@
     color: #ffffff;
 }
 
-.footer-list {
-    margin-left: 93px;
-}
-
-.footer__social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer__social-icon {
-    fill: var(--white-text-color);
-}
-
-.footer__social-link:hover,
-.footer__social-link:focus {
-    background-color: var(--accent-color);
-    outline: transparent;
-}
-
 .footer__social-list {
     display: flex;
     align-items: center;
@@ -83,10 +68,24 @@
     column-gap: 10px;
 }
 
-.footer__container {
-    display: flex;
-    align-items: baseline;
+
+
+.footer__social-link {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            background-color: var(--accent-color);
+            outline: transparent;
+        }
 }
+
+.footer__social-icon {
+    fill: var(--white-text-color);
+}
+
 
 .footer-subscription {
     margin-left: 93px;
@@ -134,14 +133,15 @@
     background-color: var(--accent-color);
     border: 1px solid transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            background-color: #188ce8;
+            outline: transparent;
+        }
 }
 
 .footer-subscription__btn-icon {
     fill: var(--white-text-color);
 }
 
-.footer-subscription__btn:hover,
-.footer-subscription__btn:focus {
-    background-color: #188ce8;
-    outline: transparent;
-}
