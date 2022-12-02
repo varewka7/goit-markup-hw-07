@@ -11,6 +11,7 @@
 @import "./components/backdrop";
 @import "./components/logo";
 @import "./components/modal-window";
+@import "./components/overlay";
 
 @import "./layouts/header";
 @import "./layouts/hero";
@@ -19,4 +20,5 @@
 @import "./layouts/team";
 @import "./layouts/clients";
 @import "./layouts/footer";
-@import "./layouts/projects"
+@import "./layouts/projects";
+@import "./layouts/filters";
